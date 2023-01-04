@@ -1,7 +1,7 @@
 {
   "name": "progress.cashpile.io",
-  "version": "1.0.0",
-  "description": "Weekly updates for Nights & Weekends Season 2.",
+  "version": "1.0.1+1",
+  "description": "Cashpile: Nights & Weekends Season 2 Weekly Updates",
   "dependencies": {
     "capitalize": "^2.0.4",
     "num-words": "^1.2.2",
