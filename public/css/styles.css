@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Unbounded:200,300,400,500,600,700,800,900&display=swap');
+
+:root {
+  /* https://colorhunt.co/palette/000000282a3a735f32c69749 */
+  --header-height: 15vh;
+  --header-color: #0a0a0a;
+  --header-text-color: #c69749;
+  /* --body-color: #282a3a; */
+  --body-color: #101010;
+  --body-text-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: var(--header-color);
+  z-index: 250;
+  height: var(--header-height);
+}
+
+.header {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--header-height);
+}
+
+.noUnderline {
+  text-decoration: none;
+}
+
+.header .logo {
+  width: 80vw;
+  text-align: center;
+}
+
+.header .menu .drawer {
+  display: flex;
+  height: var(--header-height);
+  padding-right: 100px;
+}
+
+.header .menu .drawer a {
+  text-transform: capitalize;
+  transition: all 0.1s linear;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  color: #585b63;
+  font-size: 17.4px;
+}
+
+.header .menu .drawer a:hover {
+  background: #f3f3f3;
+}
+
+.header .menu .drawer a:active {
+  background: #e0e0e0;
+}
+
+.menu-btn,
+.close-btn {
+  background: transparent;
+  border: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  position: absolute;
+  left: 11px;
+  top: 8px;
+  display: none;
+  cursor: pointer;
+}
+
+.menu-btn {
+  left: 3px;
+}
+
+.close-btn:active,
+.menu-btn:active {
+  background: #f3f3f3;
+}
+
+.img {
+  height: calc(100vh - 53px);
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 1140px) {
+  .header .menu .drawer {
+    padding: 0;
+  }
+}
+
+@media (max-width: 920px) {
+  .header .menu {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: -925px;
+    width: 100%;
+    height: 100%;
+    z-index: 300;
+  }
+
+  .header .menu .blank {
+    height: 100%;
+    flex: 1;
+  }
+
+  .header .menu .drawer {
+    box-shadow: 2px 0 12px rgb(0 0 0 / 40%);
+    padding-top: 50px;
+    height: 100%;
+    width: 225px;
+    background: #fff;
+    flex-direction: column;
+    position: fixed;
+    left: -240px;
+    transition: all 200ms linear;
+    overflow: auto;
+  }
+
+  .header .menu .drawer a {
+    padding: 20px;
+  }
+
+  .menu-btn,
+  .close-btn {
+    display: block;
+  }
+
+  .header .logo {
+    margin-left: 17px;
+  }
+
+  .drawer-visible {
+    left: 0 !important;
+  }
+
+  .blur {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(15px);
+    left: 0 !important;
+  }
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  word-break: break-word;
+  color: var(--body-text-color);
+}
+
+h1,
+p {
+  font-family: 'Unbounded';
+}
+
+h1 {
+  color: var(--header-text-color);
+  font-weight: 500;
+  font-size: 5vh;
+}
+p {
+  font-size: 3.5vh;
+}
+
+body {
+  overflow: hidden;
+  background-color: var(--body-color);
+  font-weight: 300;
+}
+
+.body {
+  overflow: hidden;
+}
+
+.week {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
