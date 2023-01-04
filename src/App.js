@@ -3,13 +3,11 @@ import { BrowserRouter, Route } from 'react-router-dom'
 
 import Header from './components/Header'
 import Home from './pages/Home'
-import Week_0 from './pages/weeks/Week_0'
-import Week_1 from './pages/weeks/Week_1'
-import Week_2 from './pages/weeks/Week_2'
+import Week_0 from './pages/weeks/0'
+import Week_1 from './pages/weeks/1'
+import Week_2 from './pages/weeks/2'
 
 const App = () => {
-  // load the pages when page loads
-
   return (
     <BrowserRouter>
       <Header />

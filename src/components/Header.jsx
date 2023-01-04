@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import { withRouter, Link } from 'react-router-dom'
+import numWords from 'num-words'
+import capitalize from 'capitalize'
+
 import BackArrow from './BackArrow'
 
 class HeaderContainer extends Component {
@@ -7,6 +10,7 @@ class HeaderContainer extends Component {
     super(props)
     this.state = {
       showBackArrow: false,
+      headerText: 'Cashpile: N&W S2',
     }
   }
 
@@ -14,11 +18,21 @@ class HeaderContainer extends Component {
     this.setState({ showBackArrow: value })
   }
 
+  setHeaderText = (value) => {
+    this.setState({ headerText: value })
+  }
+
   componentDidMount() {
     if (this.props.location.pathname === '/') {
       this.setShowBackArrow(false)
+      this.setHeaderText('Cashpile: N&W S2')
     } else {
       this.setShowBackArrow(true)
+      this.setHeaderText(
+        'Week' +
+          ' ' +
+          capitalize(numWords(this.props.location.pathname.replace('/', '')))
+      )
     }
   }
 
@@ -26,14 +40,16 @@ class HeaderContainer extends Component {
     this.unlisten = this.props.history.listen((location, action) => {
       if (location.pathname === '/') {
         this.setShowBackArrow(false)
+        this.setHeaderText('Cashpile: N&W S2')
       } else {
         this.setShowBackArrow(true)
+        this.setHeaderText(
+          'Week' +
+            ' ' +
+            capitalize(numWords(location.pathname.replace('/', '')))
+        )
       }
     })
-  }
-
-  componentWillUnmount() {
-    this.unlisten()
   }
 
   render() {
@@ -43,7 +59,7 @@ class HeaderContainer extends Component {
           {this.state.showBackArrow ? <BackArrow /> : <div></div>}
           <div style={{ width: '20vw' }}></div>
           <Link to='/' className='noUnderline'>
-            <h1 className='logo'>Nights & Weekends S2</h1>
+            <h1 className='logo'>{this.state.headerText}</h1>
           </Link>
           <div style={{ width: '20vw' }}></div>
         </div>

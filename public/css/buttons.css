@@ -1,0 +1,68 @@
+/* https://codepen.io/pro-anshu/pen/JjBdMyj */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+button {
+  padding: 2vh 2.5vw;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3vh;
+}
+
+#shadow {
+  border-radius: 10px;
+  border: 2px solid #000;
+  box-shadow: 0.75vw 0.75vh;
+  background-color: #fec89a;
+  transition: box-shadow 300ms ease, transform 500ms ease;
+}
+
+#shadow:hover {
+  box-shadow: none;
+}
+
+#shadow:active {
+  transform: scale(0.9);
+}
+
+#submit {
+  background-color: #55a630;
+  border: none;
+  border-radius: 50px;
+  width: 10rem;
+  position: relative;
+  overflow: hidden;
+  transition: transform 500ms ease;
+}
+
+#submit::before {
+  content: '';
+  background-color: #7c38d8;
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: width 500ms ease;
+}
+
+#submit::after {
+  content: '';
+  background-image: url('https://cdn-icons-png.flaticon.com/24/2767/2767192.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 0%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: width 500ms ease;
+}
+
+#submit:hover:before,
+#submit:hover:after {
+  width: 100%;
+}
+
+#submit:active {
+  transform: scale(0.9);
+}

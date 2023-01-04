@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "Weekly updates for Nights & Weekends Season 2.",
   "dependencies": {
-    "react-router-dom": "^5.2.0",
+    "capitalize": "^2.0.4",
+    "num-words": "^1.2.2",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
     "react-scripts": "^5.0.1"
