@@ -4,9 +4,9 @@ import numWords from 'num-words'
 import capitalize from 'capitalize'
 
 import BackArrow from './BackArrow'
+import cacheCheck from '../utils/cacheCheck'
 
 const headerText = 'N&W S2 - Weekly Updates'
-
 class HeaderContainer extends Component {
   constructor(props) {
     super(props)
@@ -25,6 +25,7 @@ class HeaderContainer extends Component {
   }
 
   componentDidMount() {
+    cacheCheck()
     if (this.props.location.pathname === '/') {
       this.setShowBackArrow(false)
       this.setHeaderText(headerText)

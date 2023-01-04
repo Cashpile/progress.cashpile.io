@@ -1,47 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- Automatically update JS versions to bypass cache -->
-  <script>
-    // get date and represent as string
-    const today = new Date()
-    const dd = String(today.getDate()).padStart(2, '0')
-    const mm = String(today.getMonth() + 1).padStart(2, '0') //January is 0!
-    const yyyy = today.getFullYear()
-
-    // get time and represent as string
-    const hour = today.getHours().toString()
-    const minute = today.getMinutes().toString()
-    const second = today.getSeconds().toString()
-
-    // combine date and time into one string
-    const todayDate = yyyy + mm + dd
-    const todayTime = hour + minute + second
-    const todayDateTime = todayDate + todayTime
-
-    // set version number
-    const uniqueVersion = '?v=' + todayDateTime
-
-    // replace version number in all script tags
-    const scriptTags = document.getElementsByTagName('script')
-    for (let i = 0; i < scriptTags.length; i++) {
-      const scriptTag = scriptTags[i]
-      const src = scriptTag.getAttribute('src')
-      if (src) {
-        scriptTag.setAttribute('src', src + uniqueVersion)
-      }
-    }
-
-    // replace version number in all link tags
-    const linkTags = document.getElementsByTagName('link')
-    for (let i = 0; i < linkTags.length; i++) {
-      const linkTag = linkTags[i]
-      const href = linkTag.getAttribute('href')
-      if (href) {
-        linkTag.setAttribute('href', href + uniqueVersion)
-      }
-    }
-  </script>
-
   <head>
     <title>Progress - Cashpile</title>
 
