@@ -5,12 +5,14 @@ import capitalize from 'capitalize'
 
 import BackArrow from './BackArrow'
 
+const headerText = 'N&W S2 - Weekly Updates'
+
 class HeaderContainer extends Component {
   constructor(props) {
     super(props)
     this.state = {
       showBackArrow: false,
-      headerText: 'Cashpile: N&W S2',
+      headerText: headerText,
     }
   }
 
@@ -25,7 +27,7 @@ class HeaderContainer extends Component {
   componentDidMount() {
     if (this.props.location.pathname === '/') {
       this.setShowBackArrow(false)
-      this.setHeaderText('Cashpile: N&W S2')
+      this.setHeaderText(headerText)
     } else {
       this.setShowBackArrow(true)
       this.setHeaderText(
@@ -40,7 +42,7 @@ class HeaderContainer extends Component {
     this.unlisten = this.props.history.listen((location, action) => {
       if (location.pathname === '/') {
         this.setShowBackArrow(false)
-        this.setHeaderText('Cashpile: N&W S2')
+        this.setHeaderText(headerText)
       } else {
         this.setShowBackArrow(true)
         this.setHeaderText(

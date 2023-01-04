@@ -1,7 +1,7 @@
 {
   "name": "progress.cashpile.io",
-  "version": "1.0.2+1",
-  "description": "Cashpile: Nights & Weekends Season 2 Weekly Updates",
+  "version": "1.0.3",
+  "description": "Cashpile: Weekly Updates for Nights & Weekends Season 2",
   "dependencies": {
     "capitalize": "^2.0.4",
     "num-words": "^1.2.2",
@@ -15,10 +15,8 @@
   },
   "scripts": {
     "generate-meta-tag": "node ./node_modules/react-cache-buster/dist/generate-meta-tag.js",
-    "start": "react-scripts start ",
-    "build": "npm run generate-meta-tag && react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "react-scripts start",
+    "build": "npm run generate-meta-tag && react-scripts build"
   },
   "browserslist": [
     ">0.2%",
