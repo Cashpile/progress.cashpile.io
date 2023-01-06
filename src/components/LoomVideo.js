@@ -1,4 +1,4 @@
-export default function LoomEmbed(src) {
+export default function LoomVideo(src) {
   return (
     <iframe
       src={src}
@@ -10,8 +10,10 @@ export default function LoomEmbed(src) {
         position: 'relative',
         top: 0,
         left: 0,
-        height: '85vh',
-        width: '100vw',
+        height: '70vh',
+        width: '76vw',
+        paddingLeft: '12vw',
+        paddingRight: '12vw',
       }}
     ></iframe>
   )

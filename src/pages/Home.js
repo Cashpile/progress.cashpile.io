@@ -12,12 +12,13 @@ export default function Home() {
       title: `Week ${capitalize(numWords(i))}`,
     })
   }
-
+  let spacing = (100 - (10 + 5.65 * (totalWeeks + 1))) / (totalWeeks + 3)
+  console.log(spacing)
   return (
     <div>
+      <div style={{ height: `${spacing}vh` }}></div>
       {weeks.map((week) => (
         <div key={week.id}>
-          <div style={{ height: '5vh' }}></div>
           <h2 className='week'>
             {week.id < currWeek ? (
               <button id='shadow'>
@@ -33,6 +34,11 @@ export default function Home() {
               </button>
             )}
           </h2>
+          <div
+            style={{
+              height: `${spacing}vh`,
+            }}
+          ></div>
         </div>
       ))}
     </div>

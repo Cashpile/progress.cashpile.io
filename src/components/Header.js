@@ -64,7 +64,15 @@ class HeaderContainer extends Component {
           <Link to='/' className='noUnderline'>
             <h1 className='logo'>{this.state.headerText}</h1>
           </Link>
-          <div style={{ width: '20vw' }}></div>
+          <div style={{ width: '10vw' }}></div>
+          <div style={{ width: '2vw' }}></div>
+          <a href='https://cashpile.io' target='_blank'>
+            <img
+              src='https://assets.cashpile.io/web/www/icons/shape-transparent.png'
+              style={{ width: '3vw' }}
+            />
+          </a>
+          <div style={{ width: '5vw' }}></div>
         </div>
       </header>
     )

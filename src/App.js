@@ -4,9 +4,9 @@ import { BrowserRouter, Route } from 'react-router-dom'
 import Header from './components/Header'
 
 import Home from './pages/Home'
-import Week_0 from './pages/weeks/0'
-import Week_1 from './pages/weeks/1'
-import Week_2 from './pages/weeks/2'
+import Week_0 from './pages/weeks/week-0'
+import Week_1 from './pages/weeks/week-1'
+import Week_2 from './pages/weeks/week-2'
 
 const App = () => {
   return (
