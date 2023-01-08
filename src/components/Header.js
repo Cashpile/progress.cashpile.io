@@ -6,7 +6,8 @@ import capitalize from 'capitalize'
 import BackArrow from './BackArrow'
 import cacheCheck from '../utils/cacheCheck'
 
-const headerText = 'N&W S2 - Weekly Updates'
+const headerText = 'Cashpile: N&W S2 Updates'
+
 class HeaderContainer extends Component {
   constructor(props) {
     super(props)
@@ -14,6 +15,19 @@ class HeaderContainer extends Component {
       showBackArrow: false,
       headerText: headerText,
     }
+    this.unlisten = this.props.history.listen((location, action) => {
+      if (location.pathname === '/') {
+        this.setShowBackArrow(false)
+        this.setHeaderText(headerText)
+      } else {
+        this.setShowBackArrow(true)
+        this.setHeaderText(
+          'Week' +
+            ' ' +
+            capitalize(numWords(location.pathname.replace('/', '')))
+        )
+      }
+    })
   }
 
   setShowBackArrow = (value) => {
@@ -37,22 +51,6 @@ class HeaderContainer extends Component {
           capitalize(numWords(this.props.location.pathname.replace('/', '')))
       )
     }
-  }
-
-  componentWillMount() {
-    this.unlisten = this.props.history.listen((location, action) => {
-      if (location.pathname === '/') {
-        this.setShowBackArrow(false)
-        this.setHeaderText(headerText)
-      } else {
-        this.setShowBackArrow(true)
-        this.setHeaderText(
-          'Week' +
-            ' ' +
-            capitalize(numWords(location.pathname.replace('/', '')))
-        )
-      }
-    })
   }
 
   render() {

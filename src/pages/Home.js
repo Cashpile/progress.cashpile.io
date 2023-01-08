@@ -6,17 +6,19 @@ export default function Home() {
   const currWeek = 3
   const totalWeeks = 6
   const weeks = []
+  let weekButtonSpacing =
+    (100 - (10 + 5.65 * (totalWeeks + 1))) / (totalWeeks + 3)
+
   for (let i = 0; i < totalWeeks; i++) {
     weeks.push({
       id: i,
       title: `Week ${capitalize(numWords(i))}`,
     })
   }
-  let spacing = (100 - (10 + 5.65 * (totalWeeks + 1))) / (totalWeeks + 3)
-  console.log(spacing)
+
   return (
     <div>
-      <div style={{ height: `${spacing}vh` }}></div>
+      <div style={{ height: `${weekButtonSpacing}vh` }}></div>
       {weeks.map((week) => (
         <div key={week.id}>
           <h2 className='week'>
@@ -36,7 +38,7 @@ export default function Home() {
           </h2>
           <div
             style={{
-              height: `${spacing}vh`,
+              height: `${weekButtonSpacing}vh`,
             }}
           ></div>
         </div>
