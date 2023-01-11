@@ -10,8 +10,8 @@ export default function LoomVideo(src) {
         position: 'relative',
         top: 0,
         left: 0,
-        height: '70vh',
-        width: '76vw',
+        height: '33vw',
+        width: '77vw',
         paddingLeft: '12vw',
         paddingRight: '12vw',
       }}

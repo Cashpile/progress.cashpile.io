@@ -1,4 +1,5 @@
 import LoomVideo from '../../components/LoomVideo'
+import PageNav from '../../components/PageNav'
 
 export default function Week_2() {
   // return LoomVideo(
@@ -6,10 +7,19 @@ export default function Week_2() {
   // )
   // currently being updated
   return (
-    <div className='response'>
-      <h2>Sorry!</h2>
-      <div style={{ height: '2.5vh' }}></div>
-      <p>Week 2 is currently being updated.</p>
+    <div>
+      <div className='response'>
+        <h2>Give us a moment...</h2>
+        <div style={{ height: '2.5vh' }}></div>
+        <p>
+          We're currently setting up{' '}
+          <a href='https://twitter.com/cashpileapp'>
+            @<u>CashpileApp</u>
+          </a>
+          . We'll post here soon!
+        </p>
+      </div>
+      <PageNav />
     </div>
   )
 }

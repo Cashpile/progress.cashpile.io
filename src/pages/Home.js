@@ -3,11 +3,11 @@ import numWords from 'num-words'
 import capitalize from 'capitalize'
 
 export default function Home() {
-  const currWeek = 3
+  const currWeek = 4
   const totalWeeks = 6
   const weeks = []
   let weekButtonSpacing =
-    (100 - (10 + 5.65 * (totalWeeks + 1))) / (totalWeeks + 3)
+    (100 - (10 + 5.75 * (totalWeeks + 1))) / (totalWeeks + 4)
 
   for (let i = 0; i < totalWeeks; i++) {
     weeks.push({
