@@ -16,6 +16,7 @@
 html {
   background-color: var(--header-color);
 }
+
 body {
   scroll-behavior: smooth;
   overflow-y: auto;
@@ -24,6 +25,7 @@ body {
   font-size: 1.5vw;
   color: var(--body-text-color);
   font-weight: 500;
+  min-height: 100vh;
 }
 
 .body {

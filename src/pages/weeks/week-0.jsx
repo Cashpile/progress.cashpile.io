@@ -32,7 +32,7 @@ export default function Week_0() {
         <h2>My Twitter Feedback</h2>
         <div style={{ height: '1vh' }}></div>
         <p>
-          <i>Twitter Widgets usually take time to load.</i>
+          <i>Twitter Widgets usually show up after refreshing the page.</i>
         </p>
         <div style={{ height: '2.5vh' }}></div>
         {/* flex */}
