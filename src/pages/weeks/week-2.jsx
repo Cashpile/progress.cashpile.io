@@ -41,8 +41,8 @@ export default function Week_2() {
             January 13, 2023
           </a>
         </blockquote>
-        <PageNav />
       </div>
+      <PageNav />
     </div>
   )
 }

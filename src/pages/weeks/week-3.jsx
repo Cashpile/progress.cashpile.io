@@ -9,22 +9,15 @@ export default function Week_2() {
   return (
     <div>
       <div className='response'>
-        <h2>Our Score</h2>
+        <h2>Our score...</h2>
         <div style={{ height: '2.5vh' }}></div>
         <img
           src='https://assets.cashpile.io/web/progress/images/score.jpeg'
           alt='Our Score'
           style={{ width: '25vw' }}
         />
-        <div style={{ height: '2.5vh' }}></div>
-        <p>
-          <i>
-            We're still developing Cashpile, so our score has never left zero.
-            Bummer!
-          </i>
-        </p>
         <div style={{ height: '7.5vh' }}></div>
-        <h2>Tweets</h2>
+        <h2>View our tweet!</h2>
         <div style={{ height: '1vh' }}></div>
         <p>
           <i>Twitter Widgets usually show up after you refresh the page.</i>
