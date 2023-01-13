@@ -27,7 +27,7 @@ export default function Week_2() {
         <h2>Tweets</h2>
         <div style={{ height: '1vh' }}></div>
         <p>
-          <i>Twitter Widgets usually show up after refreshing the page.</i>
+          <i>Twitter Widgets usually show up after you refresh the page.</i>
         </p>
         <div style={{ height: '2.5vh' }}></div>
         <blockquote className='twitter-tweet'>

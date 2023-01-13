@@ -8,11 +8,7 @@ export default function Week_1() {
   return (
     <div>
       <div className='response'>
-        <img
-          src='https://assets.cashpile.io/web/progress/images/demo-day-goal.jpg'
-          alt='Demo Day Goal'
-          style={{ width: '25vw' }}
-        />
+        {loomVideo}
         <div style={{ height: '5vh' }}></div>
         <img
           src='https://assets.cashpile.io/web/progress/images/periodic-goals.jpg'
@@ -20,7 +16,11 @@ export default function Week_1() {
           style={{ width: '50vw' }}
         />
         <div style={{ height: '5vh' }}></div>
-        {loomVideo}
+        <img
+          src='https://assets.cashpile.io/web/progress/images/demo-day-goal.jpg'
+          alt='Demo Day Goal'
+          style={{ width: '25vw' }}
+        />
       </div>
       <PageNav />
     </div>
