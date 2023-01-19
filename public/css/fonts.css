@@ -1,2 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Unbounded:200,300,400,500,600,700,800,900');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900');
+
+a {
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  word-break: break-word;
+  color: var(--body-text-color);
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'Unbounded';
+  color: var(--header-text-color);
+  font-weight: 400;
+  font-size: max(2.75vw, 2.5vh);
+}
+
+h2 {
+  font-size: max(1.9vw, 2.5vh);
+  font-weight: 900;
+}
+
+p {
+  font-size: max(1vw, 2vh);
+  font-weight: 400;
+}

@@ -1,7 +1,9 @@
 :root {
   /* https://colorhunt.co/palette/000000282a3a735f32c69749 */
   /* https://coolors.co/palette/000000-050303-090505-0c0808-0f0b0b-120e0e-130f0f-141010 */
-  --header-height: 10vh;
+
+  --background-color: #0c0808;
+  --header-height: 7.5vh;
   --header-color: #0c0808;
   --header-text-color: #ffc235;
   --body-color: #eee;
@@ -14,7 +16,7 @@
 }
 
 html {
-  background-color: var(--header-color);
+  background-color: var(--background-color);
 }
 
 body {
@@ -32,31 +34,6 @@ body {
   overflow: hidden;
 }
 
-a {
-  -webkit-tap-highlight-color: transparent;
-  box-sizing: border-box;
-  word-break: break-word;
-  color: var(--body-text-color);
-  text-decoration: none;
-}
-
-h1 {
-  font-family: 'Unbounded';
-  color: var(--header-text-color);
-  font-weight: 400;
-  font-size: max(2.75vw, 2.5vh);
-}
-
-h2 {
-  font-size: max(1.9vw, 2.5vh);
-  font-weight: 900;
-}
-
-p {
-  font-size: max(1vw, 2vh);
-  font-weight: 400;
-}
-
 .week {
   justify-content: center;
   align-items: center;
@@ -68,7 +45,7 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  text-align: center;
+
   margin-top: 5vh;
   margin-bottom: 0vh;
   margin-left: 20vw;

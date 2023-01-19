@@ -1,15 +1,14 @@
-import LoomVideo from '../../components/LoomVideo'
+import LoomEmbed from '../../components/LoomEmbed'
 import PageNav from '../../components/PageNav'
 
 export default function Week_1() {
-  const loomVideo = LoomVideo(
+  const loomEmbed = LoomEmbed(
     'https://www.loom.com/embed/d696ec31a28343259c7667ae25d2de4e'
   )
   return (
     <div>
+      {loomEmbed}
       <div className='response'>
-        {loomVideo}
-        <div style={{ height: '5vh' }}></div>
         <img
           src='https://assets.cashpile.io/web/progress/images/periodic-goals.jpg'
           alt='Periodic Goals'
@@ -21,7 +20,8 @@ export default function Week_1() {
           alt='Demo Day Goal'
           style={{ width: '25vw' }}
         />
-      </div>
+      </div>{' '}
+      <div style={{ height: '5vh' }}></div>
       <PageNav />
     </div>
   )

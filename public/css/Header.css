@@ -2,9 +2,8 @@ header {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
   background: var(--header-color);
-  z-index: 250;
+
   height: var(--header-height);
 }
 
@@ -25,6 +24,7 @@ header {
 .header .logo {
   width: 80vw;
   text-align: center;
+  padding-top: 1vh;
 }
 
 .menu-btn,

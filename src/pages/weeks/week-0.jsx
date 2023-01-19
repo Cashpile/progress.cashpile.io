@@ -1,3 +1,5 @@
+import { Tweet } from 'react-twitter-widgets'
+
 import PageNav from '../../components/PageNav'
 
 export default function Week_0() {
@@ -28,72 +30,21 @@ export default function Week_0() {
           ...either explore the app through Prototyping in Adobe XD, or try out
           a basic version of the app through TestFlight.
         </p>
-        <div style={{ height: '7.5vh' }}></div>
-        <h2>My Twitter Feedback</h2>
-        <div style={{ height: '1vh' }}></div>
-        <p>
-          <i>Twitter Widgets usually show up after you refresh the page.</i>
-        </p>
-        <div style={{ height: '2.5vh' }}></div>
-        {/* flex */}
-        <div className='twitter'>
-          <blockquote className='twitter-tweet'>
-            <p lang='en' dir='ltr'>
-              Watch out for copyright claims!
-            </p>
-            &mdash; Joonbeom (Daniel) Kwon (@djbkwon){' '}
-            <a href='https://twitter.com/djbkwon/status/1605369153296236546?ref_src=twsrc%5Etfw'>
-              December 21, 2022
-            </a>
-          </blockquote>{' '}
-          <div style={{ height: '2.5vh' }}></div>
-          <blockquote className='twitter-tweet'>
-            <p lang='en' dir='ltr'>
-              Here&#39;s two questions I thought of: How would you compete with
-              major retailers? What would be the incentive for sellers to
-              migrate to KindShop?
-            </p>
-            &mdash; Joonbeom (Daniel) Kwon (@djbkwon){' '}
-            <a href='https://twitter.com/djbkwon/status/1605369921193611264?ref_src=twsrc%5Etfw'>
-              December 21, 2022
-            </a>
-          </blockquote>{' '}
-          <div style={{ height: '2.5vh' }}></div>
-          <blockquote className='twitter-tweet'>
-            <p lang='en' dir='ltr'>
-              On your website or app, would the user have to log-in into each
-              platform for you to fetch data? If so, that feels like a
-              bottleneck to me.
-            </p>
-            &mdash; Joonbeom (Daniel) Kwon (@djbkwon){' '}
-            <a href='https://twitter.com/djbkwon/status/1605371641445449728?ref_src=twsrc%5Etfw'>
-              December 21, 2022
-            </a>
-          </blockquote>{' '}
-          <div style={{ height: '2.5vh' }}></div>
-          <blockquote className='twitter-tweet'>
-            <p lang='en' dir='ltr'>
-              Interesting - would the user turn the app on before starting a
-              conversation? Making that process seamless would be my goal.
-            </p>
-            &mdash; Joonbeom (Daniel) Kwon (@djbkwon){' '}
-            <a href='https://twitter.com/djbkwon/status/1605370822579089409?ref_src=twsrc%5Etfw'>
-              December 21, 2022
-            </a>
-          </blockquote>{' '}
-          <div style={{ height: '2.5vh' }}></div>
-          <blockquote className='twitter-tweet'>
-            <p lang='en' dir='ltr'>
-              1. How many people are willing to leave everything behind? 2.
-              Would you consider language barriers?
-            </p>
-            &mdash; Joonbeom (Daniel) Kwon (@djbkwon){' '}
-            <a href='https://twitter.com/djbkwon/status/1605375614185140224?ref_src=twsrc%5Etfw'>
-              December 21, 2022
-            </a>
-          </blockquote>{' '}
-        </div>
       </div>
+
+      <div>
+        <div style={{ height: '5vh' }}></div>
+        <Tweet tweetId='1605369153296236546' options={{ align: 'center' }} />
+        <div style={{ height: '2.5vh' }}></div>
+        <Tweet tweetId='1605369921193611264' options={{ align: 'center' }} />
+        <div style={{ height: '2.5vh' }}></div>
+        <Tweet tweetId='1605371641445449728' options={{ align: 'center' }} />
+        <div style={{ height: '2.5vh' }}></div>
+        <Tweet tweetId='1605370822579089409' options={{ align: 'center' }} />
+        <div style={{ height: '2.5vh' }}></div>
+        <Tweet tweetId='1605375614185140224' options={{ align: 'center' }} />
+      </div>
+      <div style={{ height: '2.5vh' }}></div>
       <PageNav />
     </div>
   )

@@ -1,6 +1,6 @@
 import React from 'react'
 
-function PageNav() {
+export default function PageNav() {
   const currWeek = 4
   const previousWeek = Math.max(
     0,
@@ -10,7 +10,6 @@ function PageNav() {
     currWeek - 1,
     parseInt(window.location.pathname.split('/')[1]) + 1
   ).toString()
-
   const weeks = Array.from(Array(currWeek).keys())
 
   return (
@@ -69,5 +68,3 @@ function PageNav() {
     </div>
   )
 }
-
-export default PageNav
