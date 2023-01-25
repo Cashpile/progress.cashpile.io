@@ -7,7 +7,7 @@ export default function Week_0() {
     <div>
       <div className='response'>
         <img
-          src='https://assets.cashpile.io/web/progress/images/cashpile-one-liner.png'
+          src='/images/cashpile-one-liner.png'
           alt='Slide showing Pay Together app features'
           style={{ width: '55vw' }}
         />

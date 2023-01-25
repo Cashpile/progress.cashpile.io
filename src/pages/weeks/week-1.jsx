@@ -10,13 +10,13 @@ export default function Week_1() {
       {loomEmbed}
       <div className='response'>
         <img
-          src='https://assets.cashpile.io/web/progress/images/periodic-goals.jpg'
+          src='/images/periodic-goals.jpg'
           alt='Periodic Goals'
           style={{ width: '50vw' }}
         />
         <div style={{ height: '5vh' }}></div>
         <img
-          src='https://assets.cashpile.io/web/progress/images/demo-day-goal.jpg'
+          src='/images/demo-day-goal.jpg'
           alt='Demo Day Goal'
           style={{ width: '25vw' }}
         />

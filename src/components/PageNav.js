@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function PageNav() {
-  const currWeek = 5
+  const currWeek = 6
   const previousWeek = Math.max(
     0,
     parseInt(window.location.pathname.split('/')[1]) - 1
