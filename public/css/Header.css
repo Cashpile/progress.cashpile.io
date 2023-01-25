@@ -3,7 +3,6 @@ header {
   position: -webkit-sticky;
   position: sticky;
   background: var(--header-color);
-
   height: var(--header-height);
 }
 

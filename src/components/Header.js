@@ -5,7 +5,7 @@ import capitalize from 'capitalize'
 
 import BackArrow from './BackArrow'
 
-const headerText = 'Cashpile: N&W S2 Updates'
+const headerText = 'Cashpile – N&W Updates'
 
 class HeaderContainer extends Component {
   constructor(props) {
@@ -61,14 +61,10 @@ class HeaderContainer extends Component {
             <h1 className='logo'>{this.state.headerText}</h1>
           </Link>
           <div style={{ width: '10vw' }}></div>
-          <div style={{ width: '2vw' }}></div>
           <a href='https://cashpile.io' target='_blank'>
-            <img
-              src='https://assets.cashpile.io/web/www/icons/shape-transparent.png'
-              style={{ width: '3vw' }}
-            />
+            <img src='/images/logo.png' style={{ width: '7.5vh' }} />
           </a>
-          <div style={{ width: '5vw' }}></div>
+          <div style={{ width: '7vw' }}></div>
         </div>
       </header>
     )

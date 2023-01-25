@@ -2,12 +2,14 @@
   /* https://colorhunt.co/palette/000000282a3a735f32c69749 */
   /* https://coolors.co/palette/000000-050303-090505-0c0808-0f0b0b-120e0e-130f0f-141010 */
 
-  --background-color: #0c0808;
+  --background-color: #1c6758;
   --header-height: 7.5vh;
-  --header-color: #0c0808;
-  --header-text-color: #ffc235;
-  --body-color: #eee;
+  --header-color: #1c6758;
+  --header-text-color: #fff;
+  --body-color: #1c6758;
   --body-text-color: #000;
+  --button-color: #fff;
+  --button-text-color: #000;
 }
 
 * {
